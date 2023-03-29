@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+    <script src="js/calculadora.js"></script>
+    <link rel="stylesheet" href="css/test08Finalahorasi.css">
+</head>
+<body>
+	<div id="calculadora">
+		<input type="text" id="pantalla" readonly>
+        <input type="button" value="1" onclick="setValue(1)">
+		<input type="button" value="2" onclick="setValue(2)">
+		<input type="button" value="3" onclick="setValue(3)">
+        <input type="button" value="4" onclick="setValue(4)">
+		<input type="button" value="5" onclick="setValue(5)">
+		<input type="button" value="6" onclick="setValue(6)">
+		<input type="button" value="7" onclick="setValue(7)">
+		<input type="button" value="8" onclick="setValue(8)">
+		<input type="button" value="9" onclick="setValue(9)">
+        <input type="button" value="0" onclick="setValue(0)">
+		<input type="button" value="/" onclick="setValue('/')">
+		<input type="button" value="*" onclick="setValue('*')">
+        <input type="button" value="+" onclick="setValue('+')">
+        <input type="button" value="-" onclick="setValue('-')">
+		<input type="button" value="(" onclick="setValue('(')">
+		<input type="button" value=")" onclick="setValue(')')">
+		<input type="button" value="." onclick="setValue('.')">
+		<input type="button" value="Bin" onclick="toBin()">
+        <input type="button" value="Hex" onclick="toHex()">
+        <input type="button" value="Oct" onclick="toOct()">
+		<input type="button" value="Raiz" onclick="raiz()" />
+        <input type="button" value="%" onclick="porcentaje()">
+
+
+		<input type="button" value="=" onclick="calcular()">
+        <input type="button" value="Borrar" onclick="limpiar()">
+	</div>
+	<div id="flecha" onmouseover="mostrarNombres()" onmouseout="ocultarNombres()">
+		&#9658; <!-- Código HTML para la flecha apuntando hacia la derecha -->
+		<div id="nombres">
+		  <ul>
+			<li>Ramirez Alfonso Jose Luis</li>
+			<li>Hernandez Santiao Israel</li>
+			<li>Macuixtle Hernandez Xochitl</li>
+			<li>Mendoza Vazquez Zurely</li>
+			<li>Borbonio Gonzalez Jose Jair</li>
+		  </ul>
+		</div>
+	  </div>
+	  
+</body>
+</html>

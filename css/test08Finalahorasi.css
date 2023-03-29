@@ -1,0 +1,170 @@
+
+body {
+    background-color: #caf7fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  #pantalla {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 24px;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: right;
+    width: 100%;
+  }
+  
+  .btn {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #cfcfcf;
+    color: #333;
+    cursor: pointer;
+    font-size: 24px;
+    height: 50px;
+    margin: 5px;
+    outline: none;
+    transition: all 0.1s ease-in-out;
+    width: 50px;
+  }
+  
+  .btn:hover {
+    background-color: #d9d9d9;
+    box-shadow: none;
+  }
+  
+  .btn:active {
+    background-color: #bfbfbf;
+    box-shadow: none;
+  }
+  
+  .op {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .op:hover {
+    background-color: #388e3c;
+  }
+  
+  .op:active {
+    background-color: #2e7d32;
+  }
+  
+  .clear {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .clear:hover {
+    background-color: #c62828;
+  }
+  
+  .clear:active {
+    background-color: #b71c1c;
+  }
+  
+  .equal {
+    background-color: #2196f3;
+    color: #fff;
+  }
+  
+  .equal:hover {
+    background-color: #1976d2;
+  }
+  
+  .equal:active {
+    background-color: #0d47a1;
+  }
+
+  #calculadora {
+    width: 300px;
+    padding: 20px;
+    background-color: #049fe7fd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin: auto;
+    margin-top: 50px;
+}
+input[type="button"] {
+    background-color: #250a3f;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px;
+    border-radius: 5px;
+    width: 45%;
+}
+input[type="button"]:hover {
+    background-color: #8527dd;
+    cursor: pointer;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#flecha {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f9c74f;
+  padding: 15px;
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#flecha:hover {
+  background-color: #1c72f3;
+}
+
+#flecha > div {
+  display: none;
+  position: absolute;
+  right: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #f7ede2;
+  border: 2px solid #bb4ff9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  width: 250px;
+}
+
+#flecha:hover > div {
+  display: block;
+}
+
+#nombres {
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nombres li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
